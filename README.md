@@ -1,41 +1,43 @@
-# 🍺 La Pulquería - Dashboard Financiero Ejecutivo 2025
+# 🍺 La Pulquería - Dashboard Noviembre 2025
 
-Dashboard interactivo de Business Intelligence para análisis financiero y toma de decisiones estratégicas.
+Dashboard ejecutivo interactivo para análisis financiero del mes de **Noviembre 2025**.
 
 ![Dashboard Preview](docs/preview.png)
 
-## 📊 Características
+## 📊 Métricas del Mes
 
-- **Resumen Ejecutivo**: KPIs principales, ingresos vs costos, distribución de ventas
-- **Estructura de Costos**: Análisis detallado de costos operativos y administrativos
-- **Tendencias**: Evolución mensual, variaciones MoM, márgenes acumulados
-- **Insights & Recomendaciones**: Alertas, oportunidades y análisis de sensibilidad
+| Indicador | Valor | vs Octubre |
+|-----------|-------|------------|
+| **Ventas** | $1,490,073 MXN | +14.2% ✅ |
+| **Utilidad Operativa** | $370,434 MXN | +13.2% ✅ |
+| **Margen Operativo** | 24.9% | — |
+| **Costos Operativos** | $980,619 MXN | +16.8% ⚠️ |
+
+## 🎯 Highlights
+
+- **Tercer mejor mes del año** en ventas
+- **Tarjeta supera a efectivo** por primera vez (44.3% vs 42.7%)
+- **Cerveza representa 43.9%** de costos operativos (alerta)
+- **Margen bruto 58.5%** - por debajo del promedio anual
 
 ## 🚀 Tecnologías
 
 - **React 18** - UI Framework
-- **Recharts** - Visualizaciones
+- **Recharts** - Visualizaciones interactivas
 - **Tailwind CSS** - Estilos
 - **Lucide React** - Iconos
 - **Vite** - Build tool
 
-## 📈 Métricas Principales (Ene-Nov 2025)
-
-| Indicador | Valor |
-|-----------|-------|
-| Ingresos Totales | $12,627,852 MXN |
-| EBITDA | $2,940,071 (23.3%) |
-| Margen Bruto | 62.9% |
-| Punto de Equilibrio | $93,924/mes |
-
-## 🛠️ Instalación
+## 📦 Instalación
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/TU_USUARIO/pulqueria-dashboard.git
+git clone https://github.com/TU_USUARIO/pulqueria-noviembre.git
+
+# Ir al directorio
+cd pulqueria-noviembre
 
 # Instalar dependencias
-cd pulqueria-dashboard
 npm install
 
 # Ejecutar en desarrollo
@@ -45,42 +47,62 @@ npm run dev
 npm run build
 ```
 
-## 📁 Estructura del Proyecto
+## 🗂️ Estructura
 
 ```
-pulqueria-dashboard/
+pulqueria-noviembre/
 ├── src/
-│   ├── Dashboard.jsx    # Componente principal
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Estilos globales
-├── docs/
-│   └── Reporte_Financiero.docx
+│   ├── DashboardNoviembre.jsx   # Dashboard principal
+│   ├── main.jsx                  # Entry point
+│   └── index.css                 # Estilos globales
 ├── public/
+│   └── favicon.svg
+├── docs/
+├── index.html
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 └── README.md
 ```
 
-## 📋 Datos Analizados
+## 📈 Secciones del Dashboard
 
-Basado en el **Estado de Resultados 2025** de La Pulquería:
-- Ventas mensuales (Enero - Noviembre)
-- Costos operativos detallados
-- Gastos administrativos
-- Utilidad operativa
+1. **Resumen** - KPIs principales, distribución de ventas, cascada P&L
+2. **Estructura de Costos** - Desglose detallado de gastos operativos y administrativos
+3. **Comparativo** - Noviembre vs Octubre, tendencia 6 meses, ranking anual
+4. **Insights** - Alertas, fortalezas y acciones recomendadas para diciembre
 
-## 🎯 Insights Clave
+## 🔍 Datos Analizados
 
-1. **Cerveza representa 39% de costos** - Oportunidad de negociación con proveedores
-2. **Enero-Febrero en negativo** - Requiere estrategia de temporada baja
-3. **Agosto: mejor mes** - Modelo a replicar ($1.65M en ventas)
-4. **Margen bruto sólido** - Pricing saludable
+Basado en el **Estado de Resultados Noviembre 2025**:
+- Ventas por método de pago (efectivo/tarjeta)
+- 19 categorías de costos operativos
+- 11 rubros de gastos administrativos
+- 4 tipos de otros gastos
+- Comparativo mensual y tendencias
+
+## 📋 Insights Clave
+
+### ⚠️ Alertas
+- Costos crecen más rápido que ventas (+16.8% vs +14.2%)
+- Cerveza líquido: 43.9% de costos (vs 39% promedio anual)
+- Margen bruto bajo: 58.5% (vs 62.9% promedio)
+
+### ✅ Fortalezas
+- Tercer mejor mes del año
+- Utilidad de $370K con margen de 24.9%
+- Mix de pago más equilibrado
+
+## 🎯 Próximos Pasos
+
+- [ ] Renegociar precio de cerveza para diciembre
+- [ ] Preparar inventario para temporada alta
+- [ ] Incentivar pagos con tarjeta
+
+---
+
+*Dashboard generado con datos reales del Estado de Resultados 2025*
 
 ## 📄 Licencia
 
 Proyecto privado - Uso interno exclusivo.
-
----
-
-*Dashboard generado con ❤️ para La Pulquería*
