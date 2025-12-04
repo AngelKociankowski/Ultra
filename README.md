@@ -1,43 +1,47 @@
-# 🍺 La Pulquería - Dashboard Noviembre 2025
+# 🍺 La Pulquería - Dashboard Financiero 2025
 
-Dashboard ejecutivo interactivo para análisis financiero del mes de **Noviembre 2025**.
+Dashboard ejecutivo interactivo con **vista anual consolidada** y **análisis mensual detallado** para cada uno de los 11 meses del año.
 
 ![Dashboard Preview](docs/preview.png)
 
-## 📊 Métricas del Mes
+## 🎯 Características
 
-| Indicador | Valor | vs Octubre |
+### Navegación Integrada
+- **Vista Anual**: Consolidado de Enero a Noviembre 2025
+- **Vista Mensual**: Selecciona cualquier mes desde el menú desplegable
+- **Cambio instantáneo** entre vistas sin perder contexto
+
+### Secciones del Dashboard
+1. **Resumen** - KPIs principales, gráficos de evolución, distribución de pagos
+2. **Costos** - Estructura detallada de costos operativos con análisis de cerveza
+3. **Tendencias** - Evolución mensual, tabla comparativa interactiva
+4. **Insights** - Alertas, fortalezas y recomendaciones estratégicas
+
+## 📊 Métricas Principales (YTD)
+
+| Indicador | Valor | % s/Ventas |
 |-----------|-------|------------|
-| **Ventas** | $1,490,073 MXN | +14.2% ✅ |
-| **Utilidad Operativa** | $370,434 MXN | +13.2% ✅ |
-| **Margen Operativo** | 24.9% | — |
-| **Costos Operativos** | $980,619 MXN | +16.8% ⚠️ |
-
-## 🎯 Highlights
-
-- **Tercer mejor mes del año** en ventas
-- **Tarjeta supera a efectivo** por primera vez (44.3% vs 42.7%)
-- **Cerveza representa 43.9%** de costos operativos (alerta)
-- **Margen bruto 58.5%** - por debajo del promedio anual
+| **Ventas Totales** | $12,627,852 MXN | 100% |
+| **EBITDA** | $2,940,071 MXN | 23.3% |
+| **Margen Bruto** | 62.9% | — |
+| **Costos Operativos** | $8,481,386 MXN | 67.2% |
 
 ## 🚀 Tecnologías
 
-- **React 18** - UI Framework
+- **React 18** - Framework UI
 - **Recharts** - Visualizaciones interactivas
-- **Tailwind CSS** - Estilos
-- **Lucide React** - Iconos
-- **Vite** - Build tool
+- **Tailwind CSS** - Estilos utility-first
+- **Lucide React** - Iconografía
+- **Vite** - Build tool ultrarrápido
 
 ## 📦 Instalación
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/TU_USUARIO/pulqueria-noviembre.git
-
-# Ir al directorio
-cd pulqueria-noviembre
+git clone https://github.com/TU_USUARIO/pulqueria-dashboard-2025.git
 
 # Instalar dependencias
+cd pulqueria-dashboard-2025
 npm install
 
 # Ejecutar en desarrollo
@@ -47,14 +51,14 @@ npm run dev
 npm run build
 ```
 
-## 🗂️ Estructura
+## 🗂️ Estructura del Proyecto
 
 ```
-pulqueria-noviembre/
+pulqueria-dashboard-2025/
 ├── src/
-│   ├── DashboardNoviembre.jsx   # Dashboard principal
-│   ├── main.jsx                  # Entry point
-│   └── index.css                 # Estilos globales
+│   ├── Dashboard.jsx    # Componente principal (vista anual + mensual)
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Estilos globales + Tailwind
 ├── public/
 │   └── favicon.svg
 ├── docs/
@@ -65,39 +69,57 @@ pulqueria-noviembre/
 └── README.md
 ```
 
-## 📈 Secciones del Dashboard
+## 📈 Datos por Mes
 
-1. **Resumen** - KPIs principales, distribución de ventas, cascada P&L
-2. **Estructura de Costos** - Desglose detallado de gastos operativos y administrativos
-3. **Comparativo** - Noviembre vs Octubre, tendencia 6 meses, ranking anual
-4. **Insights** - Alertas, fortalezas y acciones recomendadas para diciembre
+| Mes | Ventas | Utilidad | Margen |
+|-----|--------|----------|--------|
+| Enero | $248K | -$90K | -36.4% |
+| Febrero | $281K | -$28K | -9.9% |
+| Marzo | $1.23M | $351K | 28.5% |
+| Abril | $1.16M | $215K | 18.5% |
+| Mayo | $1.39M | $390K | 28.0% |
+| Junio | $1.18M | $290K | 24.5% |
+| Julio | $1.30M | $286K | 21.9% |
+| **Agosto** | **$1.65M** | **$535K** | **32.4%** |
+| Septiembre | $1.38M | $301K | 21.8% |
+| Octubre | $1.31M | $327K | 25.1% |
+| Noviembre | $1.49M | $370K | 24.9% |
 
-## 🔍 Datos Analizados
+## 🔍 Funcionalidades Clave
 
-Basado en el **Estado de Resultados Noviembre 2025**:
-- Ventas por método de pago (efectivo/tarjeta)
-- 19 categorías de costos operativos
-- 11 rubros de gastos administrativos
-- 4 tipos de otros gastos
-- Comparativo mensual y tendencias
+### Menú de Navegación
+- Desplegable con todos los meses disponibles
+- Indicador visual de utilidad por mes (verde/rojo)
+- Vista anual siempre accesible
 
-## 📋 Insights Clave
+### Tabla Comparativa Interactiva
+- Click en cualquier fila para ir al mes seleccionado
+- Resaltado del mes actual
+- Totales anuales en footer
+
+### Análisis Contextual
+- Ranking automático del mes seleccionado
+- Comparación vs mes anterior
+- Alertas dinámicas según el período
+
+## 🎯 Insights Clave
 
 ### ⚠️ Alertas
-- Costos crecen más rápido que ventas (+16.8% vs +14.2%)
-- Cerveza líquido: 43.9% de costos (vs 39% promedio anual)
-- Margen bruto bajo: 58.5% (vs 62.9% promedio)
+- Cerveza representa ~40% de costos operativos
+- Enero y Febrero en números rojos
+- Algunos meses con costos creciendo más que ventas
 
-### ✅ Fortalezas
-- Tercer mejor mes del año
-- Utilidad de $370K con margen de 24.9%
-- Mix de pago más equilibrado
+### ✅ Fortalezas  
+- Margen bruto sólido (62.9%)
+- Agosto: mejor mes del año
+- EBITDA de 23.3% competitivo
 
-## 🎯 Próximos Pasos
+## 📋 Uso
 
-- [ ] Renegociar precio de cerveza para diciembre
-- [ ] Preparar inventario para temporada alta
-- [ ] Incentivar pagos con tarjeta
+1. **Selecciona período**: Usa el menú desplegable en el header
+2. **Navega secciones**: Resumen, Costos, Tendencias, Insights
+3. **Explora datos**: Click en la tabla para cambiar de mes
+4. **Analiza insights**: Alertas y recomendaciones contextuales
 
 ---
 
